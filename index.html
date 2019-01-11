@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>contact form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<wrapper>
+	<div class="dws-wrapper">
+		<input type="checkbox" name="toggle" id="dws-form" class="toggleForm">
+		<div class="dws-container">
+			<label for="dws-form" class="toggleForm"><i class="fas fa-question-circle"></i>Ask a question</label>
+			<form id="question-form" class="formBox">
+				<div class="inputBox">
+					<label class="labelText">Your Name:</label>
+					<input type="text" id="form-name" name="name" class="userInput" required="">
+				</div>
+				<div class="inputBox">
+					<label class="labelText">E-mail:</label>
+					<input type="email" id="form-mail" name="email" class="userInput" required="">
+				</div>
+				<div class="inputBox">
+					<label class="labelText">Phone number:</label>
+					<input type="phone" id="form-phone" name="phone" class="userInput" pattern="\d+">
+				</div>
+				<div class="inputBox">
+					<label class="labelText">Message:</label>
+					<textarea type="message" id="form-message" name="message" class="userInput" required=""></textarea>
+				</div>
+				<div class="inputBox">
+					<input type="checkbox" required="">
+					<label class="personalDoc">I agree to the processing of my <a href="#">personal data</a></label>
+				</div>
+				<input type="submit" value="Send" class="button-ask-form">
+			</form>
+		</div>
+	</div>
+</wrapper>
+
+
+<script src="script.js"></script>
+</body>
+</html>

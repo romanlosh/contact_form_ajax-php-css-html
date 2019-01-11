@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #EAD3BF;
+}
+
+/*.dws-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}*/
+
+.dws-container {
+	position: fixed;
+	bottom: 0;
+	right: 10%;
+	width: 300px;
+	transform: translateY(501px);
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+.dws-container:hover {
+	transform: translateY(491px);
+}
+
+.toggleForm:checked ~ .dws-container {
+	transform: translateY(0);
+}
+
+.toggleForm[type='checkbox'] {
+	display: none;
+}
+
+.formBox {
+	padding: 30px;
+	border: 3px solid #722f37;
+	background-color: #fff;
+	transition: 0.3s;
+}
+
+.toggleForm {
+	display: block;
+	background-color: #722f37;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 24px;
+	padding: 10px 0;
+	border-radius: 8px 8px 0 0;
+	width: 85%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+i.fa-question-circle {
+	position: absolute;
+	top: 15px;
+	left: 40px;
+	font-size: 20px;
+}
+
+.inputBox {
+	position: relative;
+	margin: 0 0 20px;
+}
+
+.labelText {
+	position: absolute;
+	line-height: 40px;
+	font-size: 18px;
+	color: #a5a5a5;
+	transition: all 0.3s;
+}
+
+.focus .labelText {
+	transform: translateY(-30px);
+	font-size: 14px;
+	color: #630000;
+}
+
+.userInput {
+	position: relative;
+	background: transparent !important;
+	width: 100%;
+	height: 40px;
+	font-size: 18px;
+	color: #575454;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #a5a5a5;
+}
+
+textarea.userInput {
+	height: 100px;
+	min-height: 100px;
+	max-height: 200px;
+	margin-top: 12px;
+	resize: vertical;
+	font-size: 16px;
+}
+
+.personalDoc {
+	line-height: 24px;
+}
+
+.personalDoc,
+.personalDoc a {
+	color: #858585;
+}
+
+.personalDoc a:hover {
+	color: #722f37;
+}
+
+.button-ask-form {
+	width: 40%;
+	height: 35px;
+	font-size: 18px;
+	background-color: #722f37;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 4px;
+}
+
+.button-ask-form:hover {
+	background-color: #8D2A35;
+}
